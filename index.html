@@ -4,9 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<!-- ── PRIMARY SEO ── -->
-<title>Dw33pY | Web Developer Nairobi | Websites, PWAs & M-Pesa Integration Kenya</title>
-<meta name="description" content="Dw33pY is a Nairobi-based web developer building fast, beautiful websites, PWAs, M-Pesa Daraja integrations and WhatsApp ordering systems for small businesses in Kenya. Affordable prices, fast delivery."/>
+<title>Dw33pY | Web Developer Nairobi | Modern UI/UX, PWAs & M-Pesa Integration</title>
+<meta name="description" content="Dw33pY: Crafting modern web experiences, high-end UI/UX, and functional business solutions. Specializing in GSAP animations, PWAs, and M-Pesa integrations in Nairobi, Kenya."/>
 <meta name="keywords" content="web developer Nairobi, website design Kenya, PWA developer Kenya, M-Pesa integration developer, WhatsApp ordering system, affordable website Nairobi, mobile website Kenya, ecommerce website Kenya, Netlify developer Kenya, React developer Nairobi, small business website Nairobi, web design Nairobi, website developer Kenya, M-Pesa Daraja API, restaurant website Nairobi, cafe website Kenya, delivery app Kenya, progressive web app Kenya, cheap website Kenya, best web developer Nairobi"/>
 <meta name="author" content="Dw33pY — Dwayne Mwaniki"/>
 <meta name="robots" content="index, follow"/>
@@ -14,22 +13,19 @@
 <link rel="canonical" href="https://dw33py.netlify.app/"/>
 <meta name="google-site-verification" content="jnw_uYpAtAGaokLh7_mFHzo8-CsdaoYLq1ImylLEJbY"/>
 
-<!-- ── OPEN GRAPH (WhatsApp & Facebook link previews) ── -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://dw33py.netlify.app/"/>
-<meta property="og:title" content="Dw33pY | Web Developer Nairobi — Websites, PWAs & M-Pesa"/>
-<meta property="og:description" content="Fast, beautiful websites and PWAs for Nairobi small businesses. M-Pesa Daraja, WhatsApp ordering, GSAP animations & Netlify deployment. Based in Nairobi, Kenya."/>
+<meta property="og:title" content="Dw33pY | Web Developer Nairobi — Premium Digital Solutions"/>
+<meta property="og:description" content="Modern web experiences crafted for impact. High-end UI/UX, GSAP animations, and seamless M-Pesa integrations. Based in Nairobi, Kenya."/>
 <meta property="og:image" content="https://dw33py.netlify.app/og-image.png"/>
 <meta property="og:site_name" content="Dw33pY Web Developer"/>
 <meta property="og:locale" content="en_KE"/>
 
-<!-- ── TWITTER / X CARD ── -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Dw33pY | Web Developer Nairobi"/>
-<meta name="twitter:description" content="Fast, beautiful websites, PWAs & M-Pesa integrations for Nairobi businesses."/>
+<meta name="twitter:description" content="Premium websites, PWAs & M-Pesa integrations with high-end animations."/>
 <meta name="twitter:image" content="https://dw33py.netlify.app/og-image.png"/>
 
-<!-- ── GOOGLE STRUCTURED DATA ── -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -42,19 +38,19 @@
   "address":{"@type":"PostalAddress","addressLocality":"Nairobi","addressCountry":"KE"},
   "geo":{"@type":"GeoCoordinates","latitude":-1.286389,"longitude":36.817223},
   "areaServed":{"@type":"Country","name":"Kenya"},
-  "priceRange":"KES 15,000 – KES 58,000",
+  "priceRange":"KES 18,000 – KES 65,000",
   "openingHours":"Mo-Sa 08:00-20:00",
   "sameAs":["https://github.com/dw33py","https://wa.me/254112271833"],
   "hasOfferCatalog":{
     "@type":"OfferCatalog",
     "name":"Web Development Services",
     "itemListElement":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Starter Website"},"price":"15000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Business Website"},"price":"28000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Modern / SaaS Site"},"price":"42000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"E-Commerce Store"},"price":"58000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"PWA / App-Like"},"price":"48000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Restaurant / Cafe Site"},"price":"32000","priceCurrency":"KES"}
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Starter Website"},"price":"18000","priceCurrency":"KES"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Beauty & Salon"},"price":"28000","priceCurrency":"KES"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Restaurant / Cafe"},"price":"35000","priceCurrency":"KES"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Premium Brand"},"price":"45000","priceCurrency":"KES"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"PWA / Service App"},"price":"55000","priceCurrency":"KES"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"The Digital Empire"},"price":"65000","priceCurrency":"KES"}
     ]
   }
 }
@@ -63,7 +59,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 
-<!-- ── LOADER SCRIPT (runs in <head> before anything renders) ── -->
 <script>
 (function(){
   var start = Date.now();
@@ -79,7 +74,6 @@
       document.body.classList.remove('loading');
     }, 400);
   }
-  // wait for DOM so we can animate the bar
   document.addEventListener('DOMContentLoaded', function(){
     var bar = document.getElementById('lbar');
     var p = 0;
@@ -88,12 +82,10 @@
       if(p >= 95){ p = 95; clearInterval(iv); }
       if(bar) bar.style.width = p + '%';
     }, 90);
-    // dismiss after 3s minimum, no matter what
     var elapsed = Date.now() - start;
     var wait = Math.max(0, 3000 - elapsed);
     setTimeout(function(){ clearInterval(iv); dismiss(); }, wait);
   });
-  // hard fallback in case DOMContentLoaded already fired
   setTimeout(dismiss, 5000);
 })();
 </script>
@@ -103,7 +95,6 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:#0a0a0f;color:#f0eef6;font-family:'DM Sans',sans-serif;overflow-x:hidden;max-width:100%}
-/* scroll lock while loader shows */
 body.loading{overflow:hidden;position:fixed;width:100%;top:0;left:0}
 section{overflow:hidden;position:relative}
 img{max-width:100%}
@@ -187,7 +178,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
   transition:all .2s;white-space:nowrap}
 .nav-link:hover{color:#ff3cac;border-color:rgba(255,60,172,.3)}
 
-/* ── ASTERISK HAMBURGER ── */
 .hamburger{
   display:none;background:none;border:none;
   cursor:pointer;width:40px;height:40px;
@@ -199,19 +189,16 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
   width:22px;height:2.5px;border-radius:4px;
   top:50%;left:50%;
   transform-origin:center;
-  transition:transform 0.4s cubic-bezier(.4,0,.2,1),
-             opacity   0.3s ease;
+  transition:transform 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
 }
 .hamburger .arm:nth-child(1){background:linear-gradient(90deg,#ff3cac,#784ba0);transform:translate(-50%,-50%) rotate(0deg)}
 .hamburger .arm:nth-child(2){background:linear-gradient(90deg,#784ba0,#2b86c5);transform:translate(-50%,-50%) rotate(60deg)}
 .hamburger .arm:nth-child(3){background:linear-gradient(90deg,#2b86c5,#00f5a0);transform:translate(-50%,-50%) rotate(120deg)}
 .hamburger .arm:nth-child(4){background:linear-gradient(90deg,#ff3cac,#00f5a0);transform:translate(-50%,-50%) rotate(90deg);opacity:.5}
-/* open → X */
 .hamburger.open .arm:nth-child(1){transform:translate(-50%,-50%) rotate(45deg)}
 .hamburger.open .arm:nth-child(2){transform:translate(-50%,-50%) rotate(60deg) scaleX(0);opacity:0}
 .hamburger.open .arm:nth-child(3){transform:translate(-50%,-50%) rotate(-45deg)}
 .hamburger.open .arm:nth-child(4){transform:translate(-50%,-50%) rotate(90deg) scaleX(0);opacity:0}
-/* glow on hover/open */
 .hamburger::before{
   content:'';position:absolute;inset:-6px;border-radius:50%;
   background:radial-gradient(circle,rgba(255,60,172,.14),transparent 70%);
@@ -219,7 +206,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
 }
 .hamburger:hover::before,.hamburger.open::before{opacity:1}
 
-/* ── MOBILE MENU ── */
 .mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;z-index:190;
   background:rgba(10,10,15,.97);backdrop-filter:blur(20px);
   border-bottom:1px solid rgba(255,255,255,.07);
@@ -241,7 +227,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
   transition:all .2s;display:inline-block}
 .btn-g:hover{background:rgba(255,255,255,.12)}
 
-/* ── SECTION HEADER ── */
 .sec-head{text-align:center;margin-bottom:52px}
 .sec-head.has-sub{margin-bottom:14px}
 .sec-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2.5px;
@@ -258,7 +243,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
 .word-cycle{color:#f9cb28;font-weight:700;display:inline-block;min-width:140px;vertical-align:bottom}
 .word-cycle.in{animation:wordIn .3s ease forwards}
 .word-cycle.out{animation:wordOut .3s ease forwards}
-.hero-p{color:#7a7a99;font-size:clamp(.88rem,2vw,1.08rem);line-height:1.75;max-width:500px;
+.hero-p{color:#7a7a99;font-size:clamp(.88rem,2vw,1.08rem);line-height:1.75;max-width:580px;
   margin:0 auto 40px;animation:fadeUp .7s ease .3s both}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;animation:fadeUp .7s ease .4s both}
 .hero-badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:48px;animation:fadeUp .7s ease .55s both}
@@ -270,7 +255,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
   transition:transform .25s,box-shadow .25s,border-color .25s}
 .card:hover{transform:translateY(-4px)}
 
-/* ── GRIDS ── */
 .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;max-width:1100px;margin:0 auto}
 .grid-pkg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;max-width:1200px;margin:0 auto}
 .grid-addon{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;max-width:960px;margin:0 auto}
@@ -302,14 +286,12 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
 .work-thumb{height:140px;display:flex;align-items:center;justify-content:center;font-size:58px;position:relative;overflow:hidden}
 .work-thumb-glow{position:absolute;inset:0}
 
-/* ── MISC ── */
 .tag{border-radius:20px;padding:3px 12px;font-size:11px;font-family:'DM Mono',monospace}
 .chip{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
   border-radius:30px;padding:8px 18px;font-size:13px;color:#7a7a99}
 .divider{width:100%;height:1px;background:rgba(255,255,255,.07);margin:14px 0}
 .top-bar{position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0}
 
-/* ── CONTACT CARDS ── */
 .contact-card{background:#13131a;border-radius:18px;padding:20px 14px;
   display:flex;flex-direction:column;align-items:center;gap:7px;
   transition:transform .2s,box-shadow .2s}
@@ -330,18 +312,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer}
 .btt.show{display:flex}
 .btt:hover{background:rgba(255,60,172,.2);border-color:rgba(255,60,172,.4);color:#ff3cac}
 
-/* ── REVEAL ── */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
-/* ── FOOTER ── */
 footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
 .footer-logo{font-family:'Pacifico',cursive;font-size:20px;background:linear-gradient(90deg,#ff3cac,#2b86c5)}
 .footer-links{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
 .footer-links a{font-size:13px}
 
-/* ── MOBILE ── */
 @media(max-width:640px){
   .nav-links{display:none}
   .hamburger{display:flex}
@@ -356,19 +335,16 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   .pkg-card{padding:24px 18px}
   .sec-sub{font-size:13.5px}
 }
-/* very small phones */
 @media(max-width:380px){
   .grid-contact{grid-template-columns:1fr}
   .hero-ttl{font-size:clamp(2.6rem,14vw,3.4rem)}
   .nav-logo-wrap{font-size:18px}
 }
-/* tablet portrait */
 @media(min-width:641px) and (max-width:899px){
   .grid-3{grid-template-columns:repeat(2,1fr)}
   .grid-work{grid-template-columns:repeat(2,1fr)}
   .grid-contact{grid-template-columns:repeat(2,1fr)}
 }
-/* tablet landscape */
 @media(min-width:900px) and (max-width:1199px){
   .grid-pkg{grid-template-columns:repeat(2,1fr)}
 }
@@ -376,7 +352,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
 </head>
 <body class="loading">
 
-<!-- ── LOADER ── -->
 <div id="loader">
   <span class="loader-logo">Dw33pY</span>
   <div class="loader-bar-wrap"><div class="loader-bar" id="lbar"></div></div>
@@ -387,7 +362,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   </div>
 </div>
 
-<!-- ── NAV ── -->
 <nav class="nav" id="nav">
   <span class="logo-text gt nav-logo-wrap" onclick="go('home')">Dw33pY</span>
   <div class="nav-links">
@@ -410,10 +384,9 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <button class="mobile-link" onclick="go('pricing');closeMenu()">Pricing</button>
   <button class="mobile-link" onclick="go('work');closeMenu()">Work</button>
   <button class="mobile-link" onclick="go('contact');closeMenu()">Contact</button>
-  <a class="mobile-wa" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20website%20%F0%9F%9A%80" target="_blank">💬 WhatsApp Me</a>
+  <a class="mobile-wa" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20free%20design%20concept%20for%20my%20business%20%F0%9F%9A%80" target="_blank">💬 WhatsApp Me</a>
 </div>
 
-<!-- ── HERO ── -->
 <section id="home">
   <div class="grain"></div>
   <div class="blob" style="width:500px;height:500px;background:#ff3cac;top:-120px;left:-110px"></div>
@@ -423,15 +396,17 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <div class="hero-badge">✦ BASED IN NAIROBI, KENYA</div>
   <h1 class="hero-ttl gt">Dw33pY</h1>
   <h2 class="hero-sub">I build <span class="word-cycle" id="word">Websites</span></h2>
-  <p class="hero-p">Small businesses across Nairobi deserve beautiful, fast & fully-featured web experiences — complete with M-Pesa, WhatsApp & PWA superpowers.</p>
+  <p class="hero-p">
+    <strong>Modern Web Experiences Crafted for Impact.</strong><br>
+    Specializing in high-end UI/UX with GSAP animations, glassmorphism, and seamless M-Pesa integrations. From custom PWAs to "Digital Empire" e-commerce, I build fast, mobile-first solutions that turn visitors into loyal customers.
+  </p>
   <div class="hero-btns">
-    <button class="btn-p" onclick="go('pricing')">View Pricing ↓</button>
-    <a class="btn-g" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20website%20%F0%9F%9A%80" target="_blank">💬 WhatsApp Me</a>
+    <a class="btn-p" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20Can%20you%20do%20a%20free%20design%20mockup%20for%20my%20business?%20%F0%9F%9A%80" target="_blank">Get a Free Mockup</a>
+    <button class="btn-g" onclick="go('pricing')">View Pricing ↓</button>
   </div>
   <div class="hero-badges" id="hero-badges"></div>
 </section>
 
-<!-- ── SERVICES ── -->
 <section id="services" style="padding:96px 6vw">
   <div class="blob" style="width:360px;height:360px;background:#00f5a0;top:0;right:6%;opacity:.1"></div>
   <div class="sec-head reveal">
@@ -441,7 +416,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <div class="grid-3" id="services-grid"></div>
 </section>
 
-<!-- ── PRICING ── -->
 <section id="pricing" style="padding:96px 6vw">
   <div class="blob" style="width:430px;height:430px;background:#784ba0;top:8%;left:-7%;opacity:.1"></div>
   <div class="blob" style="width:330px;height:330px;background:#ff3cac;bottom:0;right:4%;opacity:.1"></div>
@@ -461,7 +435,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   </div>
 </section>
 
-<!-- ── WORK ── -->
 <section id="work" style="padding:96px 6vw">
   <div class="blob" style="width:400px;height:400px;background:#ff3cac;bottom:0;left:2%;opacity:.1"></div>
   <div class="sec-head reveal">
@@ -471,7 +444,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <div class="grid-work" id="work-grid"></div>
 </section>
 
-<!-- ── COMMITMENT ── -->
 <section style="padding:80px 6vw">
   <div class="blob" style="width:340px;height:340px;background:#2b86c5;top:0;right:0;opacity:.09"></div>
   <div class="sec-head reveal">
@@ -481,7 +453,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <div class="grid-3" id="caps-grid"></div>
 </section>
 
-<!-- ── PROCESS ── -->
 <section style="padding:80px 6vw;background:rgba(255,255,255,.012)">
   <div class="blob" style="width:360px;height:360px;background:#ff3cac;bottom:0;right:5%;opacity:.08"></div>
   <div class="sec-head reveal">
@@ -491,7 +462,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <div class="grid-3" id="process-grid"></div>
 </section>
 
-<!-- ── CONTACT ── -->
 <section id="contact" style="padding:96px 6vw 130px;display:flex;flex-direction:column;align-items:center;text-align:center">
   <div class="blob" style="width:440px;height:440px;background:#2b86c5;top:5%;right:-7%"></div>
   <div class="blob" style="width:300px;height:300px;background:#f9cb28;bottom:0;left:12%"></div>
@@ -504,10 +474,9 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   <div style="display:flex;gap:9px;flex-wrap:wrap;justify-content:center" id="chips"></div>
 </section>
 
-<!-- ── FOOTER ── -->
 <footer>
   <span class="footer-logo gt">Dw33pY</span>
-  <span style="color:#7a7a99;font-size:13px">© <span id="yr"></span> · Built with ❤️ in Nairobi</span>
+  <span style="color:#7a7a99;font-size:13px">© <span id="yr"></span> · made by Dw33pY</span>
   <div class="footer-links">
     <a href="https://wa.me/254112271833?text=Hey%20Dw33pY!" target="_blank" style="color:#25D366">💬 WhatsApp</a>
     <a href="mailto:dwaynemwaniki3@gmail.com" style="color:#ff9f43">✉️ Email</a>
@@ -515,13 +484,11 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
   </div>
 </footer>
 
-<!-- ── FLOATING ── -->
 <div class="wa-ring"></div>
 <a class="wa-fab" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20website%20%F0%9F%9A%80" target="_blank" title="Chat on WhatsApp">💬</a>
 <button class="btt" id="btt" onclick="go('home')" title="Back to top">↑</button>
 
 <script>
-/* ── DATA ── */
 var WA = 'https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20website%20for%20my%20business%20%F0%9F%9A%80';
 
 var SERVICES = [
@@ -540,30 +507,30 @@ var SERVICES = [
 ];
 
 var PACKAGES = [
-  {name:'Starter',         emoji:'🌱',price:'KES 15,000',usd:'~$115',color:'#00f5a0',tag:null,
-   desc:'A clean, sharp online presence for individuals and micro-businesses.',
-   yes:['Single-page website','Mobile responsive design','WhatsApp contact button','Basic animations','Netlify deployment','2 revision rounds'],
-   no:['M-Pesa integration','SEO','Custom domain setup']},
-  {name:'Business',        emoji:'🏢',price:'KES 28,000',usd:'~$215',color:'#ff3cac',tag:'MOST POPULAR',
-   desc:'Full-featured site for SMEs — looks pro, works great, drives real enquiries.',
-   yes:['Up to 5 pages / sections','Mobile-first + PWA ready','WhatsApp ordering flow','GSAP scroll animations','Contact form','Netlify deployment','3 revision rounds','1 month free support'],
+  {name:'The Starter', emoji:'🌱',price:'KES 18,000',usd:'~$135',color:'#00f5a0',tag:null,
+   desc:'A clean, sharp online presence for new side hustles and micro-businesses.',
+   yes:['Single-page website','Mobile responsive design','WhatsApp contact button','Basic animations','Netlify deployment'],
    no:['M-Pesa integration','SEO']},
-  {name:'Modern / SaaS',   emoji:'⚡',price:'KES 42,000',usd:'~$320',color:'#784ba0',tag:null,
-   desc:'Polished product or SaaS landing page with interactive UI and advanced motion.',
-   yes:['Multi-section SPA','Advanced GSAP animations','Glassmorphism / modern UI','PWA ready','WhatsApp CTA flow','Netlify + serverless functions','3 revision rounds','2 months free support'],
+  {name:'Beauty & Salon', emoji:'💅',price:'KES 28,000',usd:'~$210',color:'#ff3cac',tag:'POPULAR',
+   desc:'Perfect for salons, spas, and beauty care businesses needing a catchy pitch site.',
+   yes:['Service & price list layout','WhatsApp booking integration','Google Business Profile sync','Glassmorphism UI elements','Mobile-first design'],
    no:['M-Pesa integration']},
-  {name:'E-Commerce',      emoji:'🛒',price:'KES 58,000',usd:'~$445',color:'#f9cb28',tag:null,
+  {name:'Restaurant / Cafe',emoji:'🍽️',price:'KES 35,000',usd:'~$265',color:'#ff9f43',tag:null,
+   desc:'Stunning hospitality site with digital menus, galleries & WhatsApp ordering.',
+   yes:['Menu with categories & photos','WhatsApp ordering system','Reservation / booking form','Gallery / vibe section','PWA installable'],
+   no:['M-Pesa integration']},
+  {name:'The Premium Brand', emoji:'⚡',price:'KES 45,000',usd:'~$340',color:'#784ba0',tag:null,
+   desc:'High-end editorial or modern business site with advanced interactive UI.',
+   yes:['Multi-section architecture','Advanced GSAP & Parallax','Glassmorphism UI','WhatsApp CTA flow','Netlify + serverless functions'],
+   no:[]},
+  {name:'PWA / Service App',  emoji:'📲',price:'KES 55,000',usd:'~$415',color:'#2b86c5',tag:null,
+   desc:'App-store-worthy progressive web app for service bookings or deliveries.',
+   yes:['Full PWA (Android + iOS)','Offline mode capabilities','Service booking flow','M-Pesa STK Push','Netlify deployment'],
+   no:[]},
+  {name:'The Digital Empire',emoji:'🛒',price:'KES 65,000',usd:'~$490',color:'#f9cb28',tag:null,
    desc:'Full online store with cart, checkout, inventory management & payments.',
-   yes:['Product catalog + cart','Checkout flow','M-Pesa STK Push','WhatsApp order notifications','Admin product panel','Mobile-first PWA','Netlify deployment','3 months free support'],
-   no:[]},
-  {name:'PWA / App-Like',  emoji:'📲',price:'KES 48,000',usd:'~$368',color:'#2b86c5',tag:null,
-   desc:'Fully installable progressive web app — offline-capable, fast, app-store-worthy.',
-   yes:['Full PWA (Android + iOS)','Offline mode & service worker','Push notifications','M-Pesa or WhatsApp payments','Custom icon & splash screen','Netlify deployment','3 months free support'],
-   no:[]},
-  {name:'Restaurant / Cafe',emoji:'🍽️',price:'KES 32,000',usd:'~$245',color:'#ff9f43',tag:null,
-   desc:'Stunning hospitality site with menu, reservations, gallery & WhatsApp ordering.',
-   yes:['Menu with categories & photos','WhatsApp ordering system','Reservation / booking form','Gallery / vibe section','Opening hours & map','PWA installable','3 revision rounds'],
-   no:['M-Pesa integration']},
+   yes:['Product catalog + cart','Checkout flow & admin panel','M-Pesa STK Push Integration','WhatsApp order notifications','PWA installable'],
+   no:[]}
 ];
 
 var ADDONS = [
@@ -580,10 +547,12 @@ var ADDONS = [
 ];
 
 var PROJECTS = [
-  {emoji:'☕',name:'Cafe & Restaurant Site',desc:'Single-page hospitality site with digital menu, WhatsApp ordering, table reservations and GSAP animations. PWA-enabled for mobile install.',           tags:['PWA','WhatsApp','GSAP','Menu'],        color:'#ff3cac'},
-  {emoji:'🏍️',name:'Delivery Service PWA', desc:'Installable delivery app with coordinate-based fare calculator, 100+ location autocomplete, M-Pesa STK Push and Netlify serverless backend.',      tags:['M-Pesa','Geolocation','Offline','PWA'], color:'#f9cb28'},
-  {emoji:'🛋️',name:'Lifestyle Cafe Site',  desc:'Vibrant, mobile-first cafe website with product cart, animated sections, parallax hero and a WhatsApp checkout flow.',                              tags:['Cart','GSAP','Parallax','Netlify'],     color:'#00f5a0'},
-  {emoji:'🏪',name:'Service Business PWA', desc:'Fully offline-capable PWA for a local service business — installable, fast and deployed on Netlify with a custom domain.',                         tags:['Offline','PWA','Service Worker'],       color:'#2b86c5'},
+  {emoji:'💅',name:'Evickson Beauty Care',desc:'A catchy, modern promotional website integrating Google Business details and WhatsApp booking for a local beauty brand.', tags:['Glassmorphism','WhatsApp','Mobile-First'], color:'#ff3cac'},
+  {emoji:'🌍',name:'Travel Tribe',desc:'High-end, editorial-style travel platform featuring animated African destination showcases and deep parallax scrolling effects.', tags:['GSAP','Parallax','Premium UI'], color:'#784ba0'},
+  {emoji:'🏡',name:'Adgreens Landscape',desc:'Visually striking landscaping portfolio utilizing modern glassmorphism UI, horizontal scroll galleries, and direct WhatsApp lead generation.', tags:['Horizontal Scroll','Glassmorphism','Leads'], color:'#00f5a0'},
+  {emoji:'☕',name:'Lifestyle Cafe Site',  desc:'Vibrant cafe website featuring digital menus, animated sections, and a seamless WhatsApp checkout flow to reduce manual DM replies.', tags:['Cart','GSAP','Menu','Netlify'], color:'#ff9f43'},
+  {emoji:'🏍️',name:'Zigo Riders App', desc:'Installable mobile progressive web app built for seamless professional service booking, deployed directly from a mobile development environment.', tags:['PWA','App','Booking Flow'], color:'#2b86c5'},
+  {emoji:'💎',name:'27 Diamonds Interior', desc:'Premium interior design redesign project focused on ultra-smooth interactions, high-end aesthetics, and custom animations.', tags:['Redesign','GSAP','High-End'], color:'#f9cb28'}
 ];
 
 var CAPS = [
@@ -612,10 +581,9 @@ var CONTACTS = [
 ];
 
 var BADGES = ['React','PWA','M-Pesa','GSAP','Netlify','WhatsApp','Nairobi'];
-var WORDS  = ['Websites','PWAs','Experiences','Solutions','Ideas'];
+var WORDS  = ['Websites','Experiences','Solutions','Storefronts','Sales','Growth'];
 var CHIPS  = ['📍 Nairobi, Kenya','⚡ Fast Turnaround','💳 M-Pesa Accepted','📱 Mobile Friendly','🌍 Remote Friendly'];
 
-/* ── HELPERS ── */
 window.go = function(id){ var el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth'}); };
 function mk(tag,cls,html){
   var e=document.createElement(tag);
@@ -629,10 +597,8 @@ function hover(e,on,off){
   e.addEventListener('mouseleave',function(){ Object.assign(e.style,off); });
 }
 
-/* ── YEAR ── */
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-/* ── HERO BADGES ── */
 (function(){
   var hb = document.getElementById('hero-badges');
   BADGES.forEach(function(b,i){
@@ -642,7 +608,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   });
 })();
 
-/* ── WORD CYCLE ── */
 (function(){
   var w = document.getElementById('word');
   var idx = 0;
@@ -656,7 +621,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   }, 2200);
 })();
 
-/* ── SERVICES ── */
 (function(){
   var g = document.getElementById('services-grid');
   SERVICES.forEach(function(s){
@@ -673,7 +637,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   });
 })();
 
-/* ── PRICING ── */
 (function(){
   var g = document.getElementById('pricing-grid');
   PACKAGES.forEach(function(pkg){
@@ -726,7 +689,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   });
 })();
 
-/* ── WORK ── */
 (function(){
   var g = document.getElementById('work-grid');
   PROJECTS.forEach(function(p){
@@ -750,7 +712,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   });
 })();
 
-/* ── CAPS ── */
 (function(){
   var g = document.getElementById('caps-grid');
   CAPS.forEach(function(c){
@@ -767,7 +728,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   });
 })();
 
-/* ── PROCESS ── */
 (function(){
   var g = document.getElementById('process-grid');
   PROCESS.forEach(function(s){
@@ -788,7 +748,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   });
 })();
 
-/* ── CONTACT ── */
 (function(){
   var g = document.getElementById('contact-grid');
   CONTACTS.forEach(function(c){
@@ -811,13 +770,11 @@ document.getElementById('yr').textContent = new Date().getFullYear();
   CHIPS.forEach(function(c){ ch.appendChild(mk('div','chip',c)); });
 })();
 
-/* ── NAV SCROLL + BTT ── */
 window.addEventListener('scroll',function(){
   document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40);
   document.getElementById('btt').classList.toggle('show',window.scrollY>300);
 },{passive:true});
 
-/* ── HAMBURGER ── */
 var menuOpen = false;
 window.toggleMenu = function(){
   menuOpen = !menuOpen;
@@ -831,7 +788,6 @@ window.closeMenu = function(){
 };
 window.addEventListener('scroll',function(){ if(menuOpen) window.closeMenu(); },{passive:true});
 
-/* ── REVEAL on scroll ── */
 (function(){
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
