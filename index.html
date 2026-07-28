@@ -1,806 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- SEO -->
+    <title>Dw33pY Studio | Full-Service Digital Architecture & Web Development</title>
+    <meta name="description" content="Dw33pY is a full-service digital studio. We handle everything: high-end web development, headless e-commerce, M-Pesa API, graphic design, copywriting, and SEO."/>
+    <meta name="keywords" content="full service digital agency Nairobi, web developer Kenya, M-Pesa Daraja API, graphic design Nairobi, website copywriting Kenya, SEO expert Africa"/>
+    <meta name="author" content="Dw33pY Studio — Dwayne Mwaniki"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="theme-color" content="#0A0A0B"/>
+    <link rel="canonical" href="https://dw33py.netlify.app/"/>
 
-<title>Dw33pY | Web Developer Nairobi | Modern UI/UX, PWAs & M-Pesa Integration</title>
-<meta name="description" content="Dw33pY: Crafting modern web experiences, high-end UI/UX, and functional business solutions. Specializing in GSAP animations, PWAs, and M-Pesa integrations in Nairobi, Kenya."/>
-<meta name="keywords" content="web developer Nairobi, website design Kenya, PWA developer Kenya, M-Pesa integration developer, WhatsApp ordering system, affordable website Nairobi, mobile website Kenya, ecommerce website Kenya, Netlify developer Kenya, React developer Nairobi, small business website Nairobi, web design Nairobi, website developer Kenya, M-Pesa Daraja API, restaurant website Nairobi, cafe website Kenya, delivery app Kenya, progressive web app Kenya, cheap website Kenya, best web developer Nairobi"/>
-<meta name="author" content="Dw33pY — Dwayne Mwaniki"/>
-<meta name="robots" content="index, follow"/>
-<meta name="theme-color" content="#ff3cac"/>
-<link rel="canonical" href="https://dw33py.netlify.app/"/>
-<meta name="google-site-verification" content="jnw_uYpAtAGaokLh7_mFHzo8-CsdaoYLq1ImylLEJbY"/>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dw33py.netlify.app/"/>
+    <meta property="og:title" content="Dw33pY Studio | Full-Service Digital Architecture"/>
+    <meta property="og:description" content="We handle your entire digital presence. Code, design, copy, e-commerce, and SEO."/>
+    <meta property="og:image" content="https://dw33py.netlify.app/og-image.png"/>
 
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://dw33py.netlify.app/"/>
-<meta property="og:title" content="Dw33pY | Web Developer Nairobi — Premium Digital Solutions"/>
-<meta property="og:description" content="Modern web experiences crafted for impact. High-end UI/UX, GSAP animations, and seamless M-Pesa integrations. Based in Nairobi, Kenya."/>
-<meta property="og:image" content="https://dw33py.netlify.app/og-image.png"/>
-<meta property="og:site_name" content="Dw33pY Web Developer"/>
-<meta property="og:locale" content="en_KE"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Dw33pY | Web Developer Nairobi"/>
-<meta name="twitter:description" content="Premium websites, PWAs & M-Pesa integrations with high-end animations."/>
-<meta name="twitter:image" content="https://dw33py.netlify.app/og-image.png"/>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"ProfessionalService",
-  "name":"Dw33pY Web Development",
-  "description":"Nairobi-based web developer building fast, beautiful websites, PWAs, M-Pesa integrations and WhatsApp ordering systems for small businesses in Kenya.",
-  "url":"https://dw33py.netlify.app",
-  "telephone":"+254112271833",
-  "email":"dwaynemwaniki3@gmail.com",
-  "address":{"@type":"PostalAddress","addressLocality":"Nairobi","addressCountry":"KE"},
-  "geo":{"@type":"GeoCoordinates","latitude":-1.286389,"longitude":36.817223},
-  "areaServed":{"@type":"Country","name":"Kenya"},
-  "priceRange":"KES 18,000 – KES 65,000",
-  "openingHours":"Mo-Sa 08:00-20:00",
-  "sameAs":["https://github.com/dw33py","https://wa.me/254112271833"],
-  "hasOfferCatalog":{
-    "@type":"OfferCatalog",
-    "name":"Web Development Services",
-    "itemListElement":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Starter Website"},"price":"18000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Beauty & Salon"},"price":"28000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Restaurant / Cafe"},"price":"35000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Premium Brand"},"price":"45000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"PWA / Service App"},"price":"55000","priceCurrency":"KES"},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"The Digital Empire"},"price":"65000","priceCurrency":"KES"}
-    ]
-  }
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-
-<script>
-(function(){
-  var start = Date.now();
-  var dismissed = false;
-  function dismiss(){
-    if(dismissed) return;
-    dismissed = true;
-    var bar = document.getElementById('lbar');
-    var loader = document.getElementById('loader');
-    if(bar) bar.style.width = '100%';
-    setTimeout(function(){
-      if(loader) loader.classList.add('done');
-      document.body.classList.remove('loading');
-    }, 400);
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var bar = document.getElementById('lbar');
-    var p = 0;
-    var iv = setInterval(function(){
-      p += Math.random() * 10;
-      if(p >= 95){ p = 95; clearInterval(iv); }
-      if(bar) bar.style.width = p + '%';
-    }, 90);
-    var elapsed = Date.now() - start;
-    var wait = Math.max(0, 3000 - elapsed);
-    setTimeout(function(){ clearInterval(iv); dismiss(); }, wait);
-  });
-  setTimeout(dismiss, 5000);
-})();
-</script>
-
-<style>
-/* ── RESET ── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{background:#0a0a0f;color:#f0eef6;font-family:'DM Sans',sans-serif;overflow-x:hidden;max-width:100%}
-body.loading{overflow:hidden;position:fixed;width:100%;top:0;left:0}
-section{overflow:hidden;position:relative}
-img{max-width:100%}
-a{text-decoration:none}
-button{font-family:'DM Sans',sans-serif;cursor:pointer}
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:#0a0a0f}
-::-webkit-scrollbar-thumb{background:#ff3cac66;border-radius:4px}
-
-/* ── LOADER ── */
-#loader{
-  position:fixed;inset:0;z-index:9999;
-  background:#0a0a0f;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;
-  transition:opacity 0.5s ease,visibility 0.5s ease;
-}
-#loader.done{opacity:0;visibility:hidden;pointer-events:none}
-.loader-logo{
-  font-family:'Pacifico',cursive;font-size:clamp(2.4rem,8vw,4rem);
-  background:linear-gradient(135deg,#ff3cac,#784ba0,#2b86c5);
-  background-size:200% 200%;
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;color:transparent;
-  display:inline-block;line-height:1.3;padding-bottom:8px;
-  animation:gradShift 2s ease infinite;
-}
-.loader-bar-wrap{width:220px;height:3px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden}
-.loader-bar{height:100%;width:0%;background:linear-gradient(90deg,#ff3cac,#784ba0,#2b86c5);border-radius:4px;transition:width 0.2s ease}
-.loader-dots{display:flex;gap:8px}
-.loader-dot{width:8px;height:8px;border-radius:50%;background:#ff3cac;animation:dotPulse 1.2s ease infinite}
-.loader-dot:nth-child(2){background:#784ba0;animation-delay:.2s}
-.loader-dot:nth-child(3){background:#2b86c5;animation-delay:.4s}
-@keyframes dotPulse{0%,100%{transform:scale(1);opacity:.4}50%{transform:scale(1.4);opacity:1}}
-
-/* ── KEYFRAMES ── */
-@keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-@keyframes float{0%{transform:translateY(0)}100%{transform:translateY(-8px)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulseRing{0%{transform:scale(.95);opacity:.5}100%{transform:scale(1.6);opacity:0}}
-@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
-@keyframes bttIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@keyframes wordIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-@keyframes wordOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-6px)}}
-
-/* ── GRADIENT TEXT ── */
-.gt{
-  display:inline-block;line-height:1.3;
-  padding-top:6px;padding-bottom:12px;
-  -webkit-background-clip:text!important;
-  background-clip:text!important;
-  -webkit-text-fill-color:transparent!important;
-  color:transparent!important;
-}
-.logo-text{font-family:'Pacifico',cursive;background:linear-gradient(90deg,#ff3cac,#784ba0,#2b86c5)}
-.hero-ttl{
-  font-family:'Pacifico',cursive;
-  font-size:clamp(3.2rem,11vw,7.5rem);
-  background:linear-gradient(135deg,#ff3cac 0%,#784ba0 45%,#2b86c5 80%);
-  background-size:200% 200%;
-  padding-top:8px;padding-bottom:18px;line-height:1.3;
-  animation:gradShift 5s ease infinite,fadeUp 0.7s ease 0.1s both;
-}
-.sec-title{font-family:'Pacifico',cursive!important;font-size:clamp(1.9rem,5vw,3.2rem);padding-top:4px;padding-bottom:12px}
-.addons-title{font-family:'Pacifico',cursive;font-size:clamp(1.5rem,3.5vw,2.2rem);padding-top:4px;padding-bottom:10px}
-
-/* ── BLOBS ── */
-.blob{position:absolute;border-radius:50%;filter:blur(88px);opacity:.13;pointer-events:none}
-.grain{position:absolute;inset:0;opacity:.035;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size:180px}
-
-/* ── NAV ── */
-.nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;
-  display:flex;align-items:center;justify-content:space-between;padding:0 6vw;
-  transition:background .4s,border-color .4s,backdrop-filter .4s}
-.nav.scrolled{background:rgba(10,10,15,.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
-.nav-logo-wrap{font-size:22px;cursor:pointer}
-.nav-links{display:flex;gap:4px}
-.nav-link{background:transparent;border:1px solid transparent;border-radius:20px;
-  padding:6px 16px;font-size:13px;font-weight:500;color:#7a7a99;
-  transition:all .2s;white-space:nowrap}
-.nav-link:hover{color:#ff3cac;border-color:rgba(255,60,172,.3)}
-
-.hamburger{
-  display:none;background:none;border:none;
-  cursor:pointer;width:40px;height:40px;
-  align-items:center;justify-content:center;
-  position:relative;flex-shrink:0;
-}
-.hamburger .arm{
-  position:absolute;
-  width:22px;height:2.5px;border-radius:4px;
-  top:50%;left:50%;
-  transform-origin:center;
-  transition:transform 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
-}
-.hamburger .arm:nth-child(1){background:linear-gradient(90deg,#ff3cac,#784ba0);transform:translate(-50%,-50%) rotate(0deg)}
-.hamburger .arm:nth-child(2){background:linear-gradient(90deg,#784ba0,#2b86c5);transform:translate(-50%,-50%) rotate(60deg)}
-.hamburger .arm:nth-child(3){background:linear-gradient(90deg,#2b86c5,#00f5a0);transform:translate(-50%,-50%) rotate(120deg)}
-.hamburger .arm:nth-child(4){background:linear-gradient(90deg,#ff3cac,#00f5a0);transform:translate(-50%,-50%) rotate(90deg);opacity:.5}
-.hamburger.open .arm:nth-child(1){transform:translate(-50%,-50%) rotate(45deg)}
-.hamburger.open .arm:nth-child(2){transform:translate(-50%,-50%) rotate(60deg) scaleX(0);opacity:0}
-.hamburger.open .arm:nth-child(3){transform:translate(-50%,-50%) rotate(-45deg)}
-.hamburger.open .arm:nth-child(4){transform:translate(-50%,-50%) rotate(90deg) scaleX(0);opacity:0}
-.hamburger::before{
-  content:'';position:absolute;inset:-6px;border-radius:50%;
-  background:radial-gradient(circle,rgba(255,60,172,.14),transparent 70%);
-  opacity:0;transition:opacity .3s;
-}
-.hamburger:hover::before,.hamburger.open::before{opacity:1}
-
-.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;z-index:190;
-  background:rgba(10,10,15,.97);backdrop-filter:blur(20px);
-  border-bottom:1px solid rgba(255,255,255,.07);
-  padding:16px 6vw 20px;flex-direction:column;gap:6px;animation:slideDown .25s ease}
-.mobile-menu.open{display:flex}
-.mobile-link{background:transparent;border:none;text-align:left;padding:12px 16px;
-  border-radius:12px;color:#bbb8cc;font-size:15px;font-weight:500;transition:all .2s}
-.mobile-link:hover{background:rgba(255,60,172,.1);color:#ff3cac}
-.mobile-wa{display:block;margin-top:8px;background:linear-gradient(135deg,#25D366,#128C7E);
-  border-radius:12px;padding:12px 16px;color:#fff;font-weight:700;font-size:14px;text-align:center}
-
-/* ── BUTTONS ── */
-.btn-p{background:linear-gradient(135deg,#ff3cac,#784ba0);border:none;border-radius:30px;
-  padding:13px 30px;color:#fff;font-weight:700;font-size:15px;
-  box-shadow:0 4px 28px rgba(255,60,172,.35);transition:transform .2s,box-shadow .2s;display:inline-block}
-.btn-p:hover{transform:scale(1.05);box-shadow:0 8px 36px rgba(255,60,172,.45)}
-.btn-g{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);
-  border-radius:30px;padding:13px 30px;color:#f0eef6;font-weight:600;font-size:15px;
-  transition:all .2s;display:inline-block}
-.btn-g:hover{background:rgba(255,255,255,.12)}
-
-.sec-head{text-align:center;margin-bottom:52px}
-.sec-head.has-sub{margin-bottom:14px}
-.sec-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2.5px;
-  text-transform:uppercase;margin-bottom:10px;display:block}
-.sec-sub{color:#7a7a99;font-size:14.5px;line-height:1.7;max-width:520px;margin:12px auto 48px}
-
-/* ── HERO ── */
-#home{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;padding:90px 6vw 60px}
-.hero-badge{display:inline-block;background:rgba(255,60,172,.1);border:1px solid rgba(255,60,172,.28);
-  border-radius:30px;padding:6px 20px;margin-bottom:28px;font-size:12px;color:#ff3cac;
-  font-family:'DM Mono',monospace;letter-spacing:1.5px;animation:fadeUp .7s ease both}
-.hero-sub{font-weight:400;font-size:clamp(1.05rem,3.5vw,2rem);color:#f0eef6;margin-bottom:16px;animation:fadeUp .7s ease .2s both}
-.word-cycle{color:#f9cb28;font-weight:700;display:inline-block;min-width:140px;vertical-align:bottom}
-.word-cycle.in{animation:wordIn .3s ease forwards}
-.word-cycle.out{animation:wordOut .3s ease forwards}
-.hero-p{color:#7a7a99;font-size:clamp(.88rem,2vw,1.08rem);line-height:1.75;max-width:580px;
-  margin:0 auto 40px;animation:fadeUp .7s ease .3s both}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;animation:fadeUp .7s ease .4s both}
-.hero-badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:48px;animation:fadeUp .7s ease .55s both}
-.hero-tag{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-  border-radius:20px;padding:5px 13px;font-size:12px;color:#7a7a99;font-family:'DM Mono',monospace}
-
-/* ── CARDS ── */
-.card{background:#13131a;border:1px solid rgba(255,255,255,.07);border-radius:20px;
-  transition:transform .25s,box-shadow .25s,border-color .25s}
-.card:hover{transform:translateY(-4px)}
-
-.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;max-width:1100px;margin:0 auto}
-.grid-pkg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;max-width:1200px;margin:0 auto}
-.grid-addon{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;max-width:960px;margin:0 auto}
-.grid-work{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;max-width:1100px;margin:0 auto}
-.grid-contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;max-width:720px;margin:0 auto}
-
-/* ── PRICING ── */
-.pkg-card{background:#13131a;border:1px solid rgba(255,255,255,.08);border-radius:24px;
-  padding:30px 24px;position:relative;overflow:hidden;
-  transition:transform .25s,box-shadow .25s,border-color .25s;
-  display:flex;flex-direction:column}
-.pkg-card:hover{transform:translateY(-5px)}
-.pkg-card.featured{border-color:rgba(255,60,172,.45);box-shadow:0 0 40px rgba(255,60,172,.12)}
-.pkg-bar{position:absolute;top:0;left:0;right:0;height:4px;border-radius:24px 24px 0 0}
-.pkg-badge{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,#ff3cac,#784ba0);
-  color:#fff;font-size:9px;font-weight:700;font-family:'DM Mono',monospace;letter-spacing:1px;
-  padding:4px 11px;border-radius:20px}
-.pkg-price{font-family:'Pacifico',cursive;font-size:26px;padding-bottom:2px}
-.pkg-features{list-style:none;flex:1}
-.pkg-features li{display:flex;gap:9px;margin-bottom:8px;font-size:13.5px}
-.pkg-btn{display:block;text-align:center;border:none;border-radius:30px;padding:12px;
-  color:#fff;font-weight:700;font-size:14px;margin-top:auto;transition:transform .2s;width:100%}
-.pkg-btn:hover{transform:scale(1.03)}
-
-/* ── WORK CARDS ── */
-.work-card{background:#13131a;border:1px solid rgba(255,255,255,.07);border-radius:22px;
-  overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
-.work-card:hover{transform:translateY(-6px) scale(1.01)}
-.work-thumb{height:140px;display:flex;align-items:center;justify-content:center;font-size:58px;position:relative;overflow:hidden}
-.work-thumb-glow{position:absolute;inset:0}
-
-.tag{border-radius:20px;padding:3px 12px;font-size:11px;font-family:'DM Mono',monospace}
-.chip{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
-  border-radius:30px;padding:8px 18px;font-size:13px;color:#7a7a99}
-.divider{width:100%;height:1px;background:rgba(255,255,255,.07);margin:14px 0}
-.top-bar{position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0}
-
-.contact-card{background:#13131a;border-radius:18px;padding:20px 14px;
-  display:flex;flex-direction:column;align-items:center;gap:7px;
-  transition:transform .2s,box-shadow .2s}
-.contact-card:hover{transform:translateY(-5px)}
-
-/* ── FLOATING UI ── */
-.wa-fab{position:fixed;bottom:24px;right:20px;z-index:300;width:54px;height:54px;border-radius:50%;
-  background:linear-gradient(135deg,#25D366,#128C7E);
-  display:flex;align-items:center;justify-content:center;font-size:25px;
-  box-shadow:0 6px 24px rgba(37,211,102,.4);transition:transform .2s}
-.wa-fab:hover{transform:scale(1.1)}
-.wa-ring{position:fixed;bottom:24px;right:20px;z-index:299;width:54px;height:54px;
-  border-radius:50%;background:rgba(37,211,102,.28);animation:pulseRing 2.2s ease-out infinite;pointer-events:none}
-.btt{position:fixed;bottom:90px;right:22px;z-index:300;width:40px;height:40px;border-radius:50%;
-  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
-  display:none;align-items:center;justify-content:center;font-size:17px;color:#f0eef6;
-  transition:all .2s;animation:bttIn .3s ease}
-.btt.show{display:flex}
-.btt:hover{background:rgba(255,60,172,.2);border-color:rgba(255,60,172,.4);color:#ff3cac}
-
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-
-footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 6vw 90px;
-  display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
-.footer-logo{font-family:'Pacifico',cursive;font-size:20px;background:linear-gradient(90deg,#ff3cac,#2b86c5)}
-.footer-links{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
-.footer-links a{font-size:13px}
-
-@media(max-width:640px){
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .hero-btns{flex-direction:column;align-items:stretch}
-  .hero-btns a,.hero-btns button{text-align:center}
-  .blob{transform:scale(.55);transform-origin:center}
-  .grid-3{grid-template-columns:1fr}
-  .grid-pkg{grid-template-columns:1fr}
-  .grid-addon{grid-template-columns:1fr}
-  .grid-work{grid-template-columns:1fr}
-  .grid-contact{grid-template-columns:repeat(2,1fr)}
-  .pkg-card{padding:24px 18px}
-  .sec-sub{font-size:13.5px}
-}
-@media(max-width:380px){
-  .grid-contact{grid-template-columns:1fr}
-  .hero-ttl{font-size:clamp(2.6rem,14vw,3.4rem)}
-  .nav-logo-wrap{font-size:18px}
-}
-@media(min-width:641px) and (max-width:899px){
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-  .grid-work{grid-template-columns:repeat(2,1fr)}
-  .grid-contact{grid-template-columns:repeat(2,1fr)}
-}
-@media(min-width:900px) and (max-width:1199px){
-  .grid-pkg{grid-template-columns:repeat(2,1fr)}
-}
-</style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css"/>
 </head>
-<body class="loading">
+<body>
 
-<div id="loader">
-  <span class="loader-logo">Dw33pY</span>
-  <div class="loader-bar-wrap"><div class="loader-bar" id="lbar"></div></div>
-  <div class="loader-dots">
-    <div class="loader-dot"></div>
-    <div class="loader-dot"></div>
-    <div class="loader-dot"></div>
-  </div>
-</div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<nav class="nav" id="nav">
-  <span class="logo-text gt nav-logo-wrap" onclick="go('home')">Dw33pY</span>
-  <div class="nav-links">
-    <button class="nav-link" onclick="go('home')">Home</button>
-    <button class="nav-link" onclick="go('services')">Services</button>
-    <button class="nav-link" onclick="go('pricing')">Pricing</button>
-    <button class="nav-link" onclick="go('work')">Work</button>
-    <button class="nav-link" onclick="go('contact')">Contact</button>
-  </div>
-  <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu">
-    <span class="arm"></span>
-    <span class="arm"></span>
-    <span class="arm"></span>
-    <span class="arm"></span>
-  </button>
-</nav>
-<div class="mobile-menu" id="mmenu">
-  <button class="mobile-link" onclick="go('home');closeMenu()">Home</button>
-  <button class="mobile-link" onclick="go('services');closeMenu()">Services</button>
-  <button class="mobile-link" onclick="go('pricing');closeMenu()">Pricing</button>
-  <button class="mobile-link" onclick="go('work');closeMenu()">Work</button>
-  <button class="mobile-link" onclick="go('contact');closeMenu()">Contact</button>
-  <a class="mobile-wa" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20free%20design%20concept%20for%20my%20business%20%F0%9F%9A%80" target="_blank">💬 WhatsApp Me</a>
-</div>
-
-<section id="home">
-  <div class="grain"></div>
-  <div class="blob" style="width:500px;height:500px;background:#ff3cac;top:-120px;left:-110px"></div>
-  <div class="blob" style="width:400px;height:400px;background:#2b86c5;bottom:-50px;right:-90px"></div>
-  <div class="blob" style="width:300px;height:300px;background:#784ba0;top:45%;left:55%"></div>
-  <div class="blob" style="width:250px;height:250px;background:#f9cb28;top:18%;right:6%"></div>
-  <div class="hero-badge">✦ BASED IN NAIROBI, KENYA</div>
-  <h1 class="hero-ttl gt">Dw33pY</h1>
-  <h2 class="hero-sub">I build <span class="word-cycle" id="word">Websites</span></h2>
-  <p class="hero-p">
-    <strong>Modern Web Experiences Crafted for Impact.</strong><br>
-    Specializing in high-end UI/UX with GSAP animations, glassmorphism, and seamless M-Pesa integrations. From custom PWAs to "Digital Empire" e-commerce, I build fast, mobile-first solutions that turn visitors into loyal customers.
-  </p>
-  <div class="hero-btns">
-    <a class="btn-p" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20Can%20you%20do%20a%20free%20design%20mockup%20for%20my%20business?%20%F0%9F%9A%80" target="_blank">Get a Free Mockup</a>
-    <button class="btn-g" onclick="go('pricing')">View Pricing ↓</button>
-  </div>
-  <div class="hero-badges" id="hero-badges"></div>
-</section>
-
-<section id="services" style="padding:96px 6vw">
-  <div class="blob" style="width:360px;height:360px;background:#00f5a0;top:0;right:6%;opacity:.1"></div>
-  <div class="sec-head reveal">
-    <span class="sec-label" style="color:#00f5a0">WHAT I DO</span>
-    <h2 class="sec-title gt" style="background:linear-gradient(90deg,#00f5a0,#2b86c5)">Services</h2>
-  </div>
-  <div class="grid-3" id="services-grid"></div>
-</section>
-
-<section id="pricing" style="padding:96px 6vw">
-  <div class="blob" style="width:430px;height:430px;background:#784ba0;top:8%;left:-7%;opacity:.1"></div>
-  <div class="blob" style="width:330px;height:330px;background:#ff3cac;bottom:0;right:4%;opacity:.1"></div>
-  <div class="sec-head has-sub reveal">
-    <span class="sec-label" style="color:#784ba0">TRANSPARENT PRICING</span>
-    <h2 class="sec-title gt" style="background:linear-gradient(90deg,#784ba0,#ff3cac)">Packages</h2>
-    <p class="sec-sub">All prices in KES. No hidden fees. M-Pesa accepted.<br>50% deposit to start, 50% on delivery.</p>
-  </div>
-  <div class="grid-pkg" id="pricing-grid"></div>
-  <div style="margin-top:64px">
-    <div class="sec-head reveal" style="margin-bottom:32px">
-      <span class="sec-label" style="color:#f9cb28">POWER-UPS</span>
-      <h3 class="addons-title gt" style="background:linear-gradient(90deg,#f9cb28,#ff9f43)">Add-Ons</h3>
-      <p style="color:#7a7a99;font-size:14px;margin-top:8px">Bolt these onto any package for extra firepower.</p>
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-text">Dw33pY</div>
+        <div class="loader-bar"><div id="lbar"></div></div>
     </div>
-    <div class="grid-addon" id="addon-grid"></div>
-  </div>
-</section>
 
-<section id="work" style="padding:96px 6vw">
-  <div class="blob" style="width:400px;height:400px;background:#ff3cac;bottom:0;left:2%;opacity:.1"></div>
-  <div class="sec-head reveal">
-    <span class="sec-label" style="color:#ff3cac">PORTFOLIO</span>
-    <h2 class="sec-title gt" style="background:linear-gradient(90deg,#ff3cac,#f9cb28)">What I've Built</h2>
-  </div>
-  <div class="grid-work" id="work-grid"></div>
-</section>
+    <!-- Top Signature Marquee -->
+    <div class="top-marquee">
+        <div class="marquee-track">
+            <span>DW33PY DIGITAL ARCHITECTURE</span> <span class="dot">•</span> <span>FULL-SERVICE STUDIO</span> <span class="dot">•</span> <span>NAIROBI ↔ GLOBAL</span> <span class="dot">•</span> <span>DW33PY DIGITAL ARCHITECTURE</span> <span class="dot">•</span> <span>FULL-SERVICE STUDIO</span> <span class="dot">•</span> <span>NAIROBI ↔ GLOBAL</span> <span class="dot">•</span>
+        </div>
+    </div>
 
-<section style="padding:80px 6vw">
-  <div class="blob" style="width:340px;height:340px;background:#2b86c5;top:0;right:0;opacity:.09"></div>
-  <div class="sec-head reveal">
-    <span class="sec-label" style="color:#2b86c5">WHY WORK WITH ME</span>
-    <h2 class="sec-title gt" style="background:linear-gradient(90deg,#2b86c5,#00f5a0)">My Commitment</h2>
-  </div>
-  <div class="grid-3" id="caps-grid"></div>
-</section>
+    <!-- Desktop Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a class="nav-logo" onclick="go('home')" aria-label="Dw33pY Home">
+                <svg width="40" height="20" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="sigSvg" aria-hidden="true">
+                    <path d="M5 30 Q 15 5, 25 20 T 45 30 Q 55 10, 65 25 L 75 10 L 85 30 L 95 15" />
+                </svg>
+                <span class="logo-text">Dw33pY<span>.</span></span>
+            </a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a class="nav-link" onclick="go('capabilities')">Services</a>
+                <a class="nav-link" onclick="go('deployments')">Portfolio</a>
+                <a class="nav-link" onclick="go('engagement')">Pricing</a>
+            </nav>
+            <a class="nav-cta magnetic" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20Let's%20build%20something%20premium." target="_blank" rel="noopener">Start Project</a>
+        </div>
+    </header>
 
-<section style="padding:80px 6vw;background:rgba(255,255,255,.012)">
-  <div class="blob" style="width:360px;height:360px;background:#ff3cac;bottom:0;right:5%;opacity:.08"></div>
-  <div class="sec-head reveal">
-    <span class="sec-label" style="color:#ff9f43">HOW IT WORKS</span>
-    <h2 class="sec-title gt" style="background:linear-gradient(90deg,#ff9f43,#ff3cac)">The Process</h2>
-  </div>
-  <div class="grid-3" id="process-grid"></div>
-</section>
+    <!-- Mobile Bottom Dock Navigation -->
+    <nav class="mobile-dock" aria-label="Mobile navigation">
+        <a onclick="go('home')" class="dock-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1V9.5z"/></svg>
+            <span>Home</span>
+        </a>
+        <a onclick="go('capabilities')" class="dock-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <span>Services</span>
+        </a>
+        <a onclick="go('deployments')" class="dock-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <span>Work</span>
+        </a>
+        <a href="https://wa.me/254112271833" target="_blank" rel="noopener" class="dock-item dock-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.22 8.22 0 012.42 5.82c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24z"/></svg>
+            <span>Chat</span>
+        </a>
+    </nav>
 
-<section id="contact" style="padding:96px 6vw 130px;display:flex;flex-direction:column;align-items:center;text-align:center">
-  <div class="blob" style="width:440px;height:440px;background:#2b86c5;top:5%;right:-7%"></div>
-  <div class="blob" style="width:300px;height:300px;background:#f9cb28;bottom:0;left:12%"></div>
-  <div class="sec-head has-sub reveal" style="width:100%">
-    <span class="sec-label" style="color:#2b86c5">LET'S BUILD SOMETHING</span>
-    <h2 class="sec-title gt" style="background:linear-gradient(90deg,#2b86c5,#784ba0,#ff3cac)">Get In Touch</h2>
-    <p class="sec-sub">Got a business idea or want to take your brand online?<br>Reach out — from idea to live site, fast. 🚀</p>
-  </div>
-  <div class="grid-contact reveal" style="width:100%;margin-bottom:32px" id="contact-grid"></div>
-  <div style="display:flex;gap:9px;flex-wrap:wrap;justify-content:center" id="chips"></div>
-</section>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-meta">
+                        <span class="status-dot"></span> NAIROBI-BASED, GLOBALLY DEPLOYED
+                    </div>
+                    <h1 class="hero-title">
+                        Your entire<br>
+                        <span class="italic-text">digital</span> presence, engineered.
+                    </h1>
+                    <p class="hero-desc">
+                        We are a full-service digital studio. From high-performance web architecture and seamless M-Pesa integrations to graphic design, copywriting, and SEO. We handle everything required to scale your business online.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn-primary magnetic" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%20want%20a%20free%20mockup." target="_blank" rel="noopener">Get a Free Mockup</a>
+                        <a class="btn-ghost" onclick="go('deployments')">View Live Work →</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="terminal-title">dw33py@studio: ~</span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<footer>
-  <span class="footer-logo gt">Dw33pY</span>
-  <span style="color:#7a7a99;font-size:13px">© <span id="yr"></span> · made by Dw33pY</span>
-  <div class="footer-links">
-    <a href="https://wa.me/254112271833?text=Hey%20Dw33pY!" target="_blank" style="color:#25D366">💬 WhatsApp</a>
-    <a href="mailto:dwaynemwaniki3@gmail.com" style="color:#ff9f43">✉️ Email</a>
-    <a href="tel:+254112271833" style="color:#2b86c5">📞 Call</a>
-  </div>
-</footer>
+        <!-- CAPABILITIES SECTION (Expanding Accordion) -->
+        <section id="capabilities" class="section-pad">
+            <div class="section-head reveal">
+                <span class="sec-label">[ Full-Service Capabilities ]</span>
+                <h2 class="sec-title">Everything you need <span class="italic-text">to win</span>.</h2>
+                <p class="sec-sub">Why hire three different agencies when one studio can handle your entire digital ecosystem? Click to explore our full suite of services.</p>
+            </div>
+            <div class="cap-accordion" id="capAccordion">
+                <!-- Populated by JS -->
+            </div>
+        </section>
 
-<div class="wa-ring"></div>
-<a class="wa-fab" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20website%20%F0%9F%9A%80" target="_blank" title="Chat on WhatsApp">💬</a>
-<button class="btt" id="btt" onclick="go('home')" title="Back to top">↑</button>
+        <!-- DEPLOYMENTS SECTION (Live iFrame Previews) -->
+        <section id="deployments" class="deployments-section">
+            <div class="section-head horizontal-head reveal">
+                <span class="sec-label">[ Recent Work ]</span>
+                <h2 class="sec-title">Live <span class="italic-text">Deployments</span></h2>
+                <p class="sec-sub">Drag the screens to explore the live sites. No static images, just real code running in real-time.</p>
+            </div>
+            <div class="drag-track" id="workTrack">
+                <!-- Populated by JS -->
+            </div>
+        </section>
 
-<script>
-var WA = 'https://wa.me/254112271833?text=Hey%20Dw33pY!%20I%27d%20love%20a%20website%20for%20my%20business%20%F0%9F%9A%80';
+        <!-- ENGAGEMENT SECTION -->
+        <section id="engagement" class="section-pad section-gradient">
+            <div class="section-head has-sub reveal">
+                <span class="sec-label">[ Pricing ]</span>
+                <h2 class="sec-title">Simple, transparent <span class="italic-text">engagements</span>.</h2>
+                <p class="sec-sub">No hidden fees. 50% to start, 50% on launch. M-Pesa accepted. Let's find the perfect architecture for your goals.</p>
+            </div>
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Populated by JS -->
+            </div>
+        </section>
 
-var SERVICES = [
-  {icon:'🌐',title:'Business Websites',   desc:'Fast, beautiful sites that convert visitors into real customers.',              color:'#ff3cac'},
-  {icon:'📱',title:'Progressive Web Apps', desc:'Installable, offline-capable apps for Android & iOS — no app store needed.',  color:'#f9cb28'},
-  {icon:'💳',title:'M-Pesa Integration',   desc:'Daraja STK Push payments wired directly into your site or app.',             color:'#00f5a0'},
-  {icon:'💬',title:'WhatsApp Ordering',    desc:'Turn your menu or catalog into a seamless WhatsApp order flow.',             color:'#2b86c5'},
-  {icon:'✨',title:'GSAP Animations',      desc:'Scroll-triggered motion & parallax that makes your brand unforgettable.',    color:'#784ba0'},
-  {icon:'🚀',title:'Netlify Deployment',   desc:'Live, globally-served, and fast — from dev to deployed in minutes.',         color:'#ff9f43'},
-  {icon:'🔍',title:'SEO Optimisation',     desc:'Get found on Google — meta tags, structured data, sitemaps & indexing.',     color:'#00f5a0'},
-  {icon:'🛒',title:'E-Commerce & Carts',   desc:'Full online stores with product management, cart flows & checkout.',         color:'#ff3cac'},
-  {icon:'📊',title:'Landing Pages',        desc:'High-converting single pages for product launches, events & campaigns.',     color:'#2b86c5'},
-  {icon:'🔗',title:'API Integrations',     desc:'Connect your site to booking systems, CRMs, delivery APIs & more.',         color:'#784ba0'},
-  {icon:'🎨',title:'Logo & Branding',      desc:'Clean logos, colour palettes & brand kits delivered with source files.',     color:'#f9cb28'},
-  {icon:'🔧',title:'Site Maintenance',     desc:'Monthly updates, performance checks, backups & content changes.',            color:'#ff9f43'},
-];
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="contact-content reveal">
+                <span class="sec-label">[ Let's Talk ]</span>
+                <h2 class="contact-title">Ready to elevate<br>your digital presence?</h2>
+                <a class="btn-huge magnetic" href="https://wa.me/254112271833?text=Hey%20Dw33pY!%20Let's%20build%20something%20premium." target="_blank" rel="noopener">
+                    Message on WhatsApp <span>→</span>
+                </a>
+                <div class="contact-grid" id="contactGrid"></div>
+            </div>
+        </section>
+    </main>
 
-var PACKAGES = [
-  {name:'The Starter', emoji:'🌱',price:'KES 18,000',usd:'~$135',color:'#00f5a0',tag:null,
-   desc:'A clean, sharp online presence for new side hustles and micro-businesses.',
-   yes:['Single-page website','Mobile responsive design','WhatsApp contact button','Basic animations','Netlify deployment'],
-   no:['M-Pesa integration','SEO']},
-  {name:'Beauty & Salon', emoji:'💅',price:'KES 28,000',usd:'~$210',color:'#ff3cac',tag:'POPULAR',
-   desc:'Perfect for salons, spas, and beauty care businesses needing a catchy pitch site.',
-   yes:['Service & price list layout','WhatsApp booking integration','Google Business Profile sync','Glassmorphism UI elements','Mobile-first design'],
-   no:['M-Pesa integration']},
-  {name:'Restaurant / Cafe',emoji:'🍽️',price:'KES 35,000',usd:'~$265',color:'#ff9f43',tag:null,
-   desc:'Stunning hospitality site with digital menus, galleries & WhatsApp ordering.',
-   yes:['Menu with categories & photos','WhatsApp ordering system','Reservation / booking form','Gallery / vibe section','PWA installable'],
-   no:['M-Pesa integration']},
-  {name:'The Premium Brand', emoji:'⚡',price:'KES 45,000',usd:'~$340',color:'#784ba0',tag:null,
-   desc:'High-end editorial or modern business site with advanced interactive UI.',
-   yes:['Multi-section architecture','Advanced GSAP & Parallax','Glassmorphism UI','WhatsApp CTA flow','Netlify + serverless functions'],
-   no:[]},
-  {name:'PWA / Service App',  emoji:'📲',price:'KES 55,000',usd:'~$415',color:'#2b86c5',tag:null,
-   desc:'App-store-worthy progressive web app for service bookings or deliveries.',
-   yes:['Full PWA (Android + iOS)','Offline mode capabilities','Service booking flow','M-Pesa STK Push','Netlify deployment'],
-   no:[]},
-  {name:'The Digital Empire',emoji:'🛒',price:'KES 65,000',usd:'~$490',color:'#f9cb28',tag:null,
-   desc:'Full online store with cart, checkout, inventory management & payments.',
-   yes:['Product catalog + cart','Checkout flow & admin panel','M-Pesa STK Push Integration','WhatsApp order notifications','PWA installable'],
-   no:[]}
-];
+    <footer>
+        <div class="footer-left">
+            <span class="footer-logo">Dw33pY<span>.</span></span>
+            <p>© <span id="yr"></span> · Crafted to dominate the digital landscape — <a href="https://dw33py.netlify.app">Dw33pY</a></p>
+        </div>
+        <div class="footer-right">
+            <a href="https://wa.me/254112271833" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:dwaynemwaniki3@gmail.com">Email</a>
+            <a href="tel:+254112271833">Call</a>
+        </div>
+    </footer>
 
-var ADDONS = [
-  {icon:'🔍',name:'Basic SEO',               price:'+ KES 5,500', desc:'Meta tags, structured data, sitemap & Google indexing.'},
-  {icon:'📈',name:'Advanced SEO',             price:'+ KES 10,000',desc:'Full on-page SEO, keyword research & performance audit.'},
-  {icon:'💳',name:'M-Pesa Daraja (STK Push)', price:'+ KES 9,000', desc:'Full Safaricom Daraja API integration with callbacks.'},
-  {icon:'💰',name:'Stripe Card Payments',     price:'+ KES 8,500', desc:'International card payments via Stripe checkout.'},
-  {icon:'🌍',name:'M-Pesa + Card Bundle',     price:'+ KES 14,000',desc:'Both Stripe and M-Pesa in one seamless checkout.'},
-  {icon:'🌐',name:'Domain Setup',             price:'+ KES 3,500', desc:'.co.ke or .com registration + DNS configuration.'},
-  {icon:'🔒',name:'SSL Certificate',          price:'+ KES 2,500', desc:'HTTPS security for custom-hosted sites.'},
-  {icon:'✍️',name:'Copywriting',              price:'+ KES 4,500', desc:'Professional page copy written for your brand.'},
-  {icon:'🖼️',name:'Logo Design',              price:'+ KES 6,000', desc:'Clean, modern logo with source files.'},
-  {icon:'🔧',name:'Monthly Maintenance',      price:'KES 4,000/mo',desc:'Updates, backups, checks & minor content changes.'},
-];
-
-var PROJECTS = [
-  {emoji:'💅',name:'Evickson Beauty Care',desc:'A catchy, modern promotional website integrating Google Business details and WhatsApp booking for a local beauty brand.', tags:['Glassmorphism','WhatsApp','Mobile-First'], color:'#ff3cac'},
-  {emoji:'🌍',name:'Travel Tribe',desc:'High-end, editorial-style travel platform featuring animated African destination showcases and deep parallax scrolling effects.', tags:['GSAP','Parallax','Premium UI'], color:'#784ba0'},
-  {emoji:'🏡',name:'Adgreens Landscape',desc:'Visually striking landscaping portfolio utilizing modern glassmorphism UI, horizontal scroll galleries, and direct WhatsApp lead generation.', tags:['Horizontal Scroll','Glassmorphism','Leads'], color:'#00f5a0'},
-  {emoji:'☕',name:'Lifestyle Cafe Site',  desc:'Vibrant cafe website featuring digital menus, animated sections, and a seamless WhatsApp checkout flow to reduce manual DM replies.', tags:['Cart','GSAP','Menu','Netlify'], color:'#ff9f43'},
-  {emoji:'🏍️',name:'Zigo Riders App', desc:'Installable mobile progressive web app built for seamless professional service booking, deployed directly from a mobile development environment.', tags:['PWA','App','Booking Flow'], color:'#2b86c5'},
-  {emoji:'💎',name:'27 Diamonds Interior', desc:'Premium interior design redesign project focused on ultra-smooth interactions, high-end aesthetics, and custom animations.', tags:['Redesign','GSAP','High-End'], color:'#f9cb28'}
-];
-
-var CAPS = [
-  {icon:'🎨',title:'Design That Stands Out',   desc:'Every site gets a unique visual identity — no templates. Bold layouts, custom colour systems, and motion that feels alive.',  color:'#ff3cac'},
-  {icon:'📲',title:'Mobile-First, Always',      desc:'All my work is built mobile-first. Kenyan users are on phones — your site will feel perfect on every screen.',               color:'#f9cb28'},
-  {icon:'⚡',title:'Fast & Optimised',          desc:'Lightweight code, Netlify CDN, lazy loading and service workers. Loads fast even on 3G.',                                    color:'#00f5a0'},
-  {icon:'💳',title:'Payments That Work Locally',desc:'M-Pesa is king in Kenya. Daraja STK Push wired in so customers pay from the site — no redirects, no friction.',              color:'#2b86c5'},
-  {icon:'🔧',title:'Maintained & Supported',   desc:"I don't disappear after delivery. Ongoing support, updates, and maintenance so your site stays healthy.",                    color:'#784ba0'},
-  {icon:'🤝',title:'Clear Communication',       desc:"You'll always know what's happening. I share progress and respond fast — WhatsApp, call or email.",                          color:'#ff9f43'},
-];
-
-var PROCESS = [
-  {num:'01',title:'Discovery Call',   desc:'We chat on WhatsApp or phone — you tell me about your business and goals. No jargon, just a real conversation.',color:'#ff3cac'},
-  {num:'02',title:'Quote & Deposit',  desc:'I send a clear quote. Pay 50% via M-Pesa to kick things off. Work begins the same day.',                        color:'#f9cb28'},
-  {num:'03',title:'Design & Build',   desc:'I design and build your site, sharing previews along the way so you can give feedback before anything is final.',color:'#00f5a0'},
-  {num:'04',title:'Review & Revise',  desc:'You review the full site. We go through revision rounds until you are genuinely happy with every detail.',       color:'#2b86c5'},
-  {num:'05',title:'Launch & Handover',desc:'Final payment, site goes live on your domain. I hand over login details, source files, and do a full walkthrough.',color:'#784ba0'},
-  {num:'06',title:'Ongoing Support',  desc:'Need updates or new features? Monthly maintenance plans available so your site stays fresh and fast.',            color:'#ff9f43'},
-];
-
-var CONTACTS = [
-  {icon:'💬',label:'WhatsApp',   sub:'+254112271833',            color:'#25D366',href:WA,                              border:'rgba(37,211,102,.25)', shadow:'rgba(37,211,102,.2)'},
-  {icon:'📞',label:'Call (Main)',sub:'+254112271833',            color:'#2b86c5',href:'tel:+254112271833',              border:'rgba(43,134,197,.25)', shadow:'rgba(43,134,197,.2)'},
-  {icon:'📱',label:'Call (Alt)', sub:'+254740272979',            color:'#784ba0',href:'tel:+254740272979',              border:'rgba(120,75,160,.25)',shadow:'rgba(120,75,160,.2)'},
-  {icon:'✉️',label:'Email',      sub:'dwaynemwaniki3@gmail.com', color:'#ff9f43',href:'mailto:dwaynemwaniki3@gmail.com',border:'rgba(255,159,67,.25)', shadow:'rgba(255,159,67,.2)'},
-];
-
-var BADGES = ['React','PWA','M-Pesa','GSAP','Netlify','WhatsApp','Nairobi'];
-var WORDS  = ['Websites','Experiences','Solutions','Storefronts','Sales','Growth'];
-var CHIPS  = ['📍 Nairobi, Kenya','⚡ Fast Turnaround','💳 M-Pesa Accepted','📱 Mobile Friendly','🌍 Remote Friendly'];
-
-window.go = function(id){ var el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth'}); };
-function mk(tag,cls,html){
-  var e=document.createElement(tag);
-  if(cls) e.className=cls;
-  if(html) e.innerHTML=html;
-  return e;
-}
-function css(e,obj){ Object.assign(e.style,obj); return e; }
-function hover(e,on,off){
-  e.addEventListener('mouseenter',function(){ Object.assign(e.style,on); });
-  e.addEventListener('mouseleave',function(){ Object.assign(e.style,off); });
-}
-
-document.getElementById('yr').textContent = new Date().getFullYear();
-
-(function(){
-  var hb = document.getElementById('hero-badges');
-  BADGES.forEach(function(b,i){
-    var s = mk('span','hero-tag',b);
-    s.style.animation = 'float '+(2.4+i*.28)+'s ease-in-out '+(i*.15)+'s infinite alternate';
-    hb.appendChild(s);
-  });
-})();
-
-(function(){
-  var w = document.getElementById('word');
-  var idx = 0;
-  setInterval(function(){
-    w.classList.remove('in'); w.classList.add('out');
-    setTimeout(function(){
-      idx = (idx+1) % WORDS.length;
-      w.textContent = WORDS[idx];
-      w.classList.remove('out'); w.classList.add('in');
-    }, 300);
-  }, 2200);
-})();
-
-(function(){
-  var g = document.getElementById('services-grid');
-  SERVICES.forEach(function(s){
-    var c = mk('div','card reveal');
-    css(c,{padding:'26px 22px',position:'relative',overflow:'hidden',cursor:'default'});
-    c.innerHTML =
-      '<div class="top-bar" style="background:linear-gradient(90deg,'+s.color+',transparent)"></div>'+
-      '<div style="font-size:30px;margin-bottom:12px">'+s.icon+'</div>'+
-      '<h3 style="font-weight:700;color:#f0eef6;font-size:15.5px;margin-bottom:8px">'+s.title+'</h3>'+
-      '<p style="color:#7a7a99;font-size:13.5px;line-height:1.68">'+s.desc+'</p>';
-    hover(c,{borderColor:s.color+'50',boxShadow:'0 10px 36px '+s.color+'1c',transform:'translateY(-4px)'},
-             {borderColor:'rgba(255,255,255,.07)',boxShadow:'none',transform:'translateY(0)'});
-    g.appendChild(c);
-  });
-})();
-
-(function(){
-  var g = document.getElementById('pricing-grid');
-  PACKAGES.forEach(function(pkg){
-    var c = mk('div','pkg-card reveal'+(pkg.tag?' featured':''));
-    var waMsg = encodeURIComponent("Hey Dw33pY! I'm interested in the "+pkg.name+" package 🚀");
-    var btnBg = pkg.tag ? 'linear-gradient(135deg,#ff3cac,#784ba0)' : 'linear-gradient(135deg,'+pkg.color+'dd,'+pkg.color+'88)';
-    var btnShadow = pkg.tag ? '0 6px 24px rgba(255,60,172,.28)' : '0 4px 16px '+pkg.color+'28';
-    var yesHtml = pkg.yes.map(function(f){
-      return '<li class="pkg-features" style="color:#d0cedf"><span style="color:'+pkg.color+';flex-shrink:0;margin-top:1px">✓</span>'+f+'</li>';
-    }).join('');
-    var noHtml = pkg.no.map(function(f){
-      return '<li class="pkg-features" style="color:#3e3e52"><span style="flex-shrink:0;margin-top:1px">✗</span>'+f+'</li>';
-    }).join('');
-    c.innerHTML =
-      '<div class="pkg-bar" style="background:linear-gradient(90deg,'+pkg.color+',transparent)"></div>'+
-      (pkg.tag?'<div class="pkg-badge">'+pkg.tag+'</div>':'')+
-      '<div style="font-size:34px;margin-bottom:10px">'+pkg.emoji+'</div>'+
-      '<h3 style="font-weight:700;color:#f0eef6;font-size:17px;margin-bottom:5px">'+pkg.name+'</h3>'+
-      '<p style="color:#7a7a99;font-size:13px;line-height:1.6;margin-bottom:18px">'+pkg.desc+'</p>'+
-      '<div style="margin-bottom:4px">'+
-        '<span class="pkg-price" style="color:'+pkg.color+'">'+pkg.price+'</span>'+
-        '<span style="color:#7a7a99;font-size:12.5px;margin-left:8px">'+pkg.usd+'</span>'+
-      '</div>'+
-      '<div class="divider"></div>'+
-      '<ul style="list-style:none;margin-bottom:22px;flex:1">'+yesHtml+noHtml+'</ul>'+
-      '<a href="https://wa.me/254112271833?text='+waMsg+'" target="_blank" class="pkg-btn" style="background:'+btnBg+';box-shadow:'+btnShadow+'">Get Started →</a>';
-    if(!pkg.tag){
-      hover(c,{borderColor:pkg.color+'44',boxShadow:'0 14px 38px '+pkg.color+'18'},
-               {borderColor:'rgba(255,255,255,.08)',boxShadow:'none'});
-    }
-    g.appendChild(c);
-  });
-
-  var ag = document.getElementById('addon-grid');
-  ADDONS.forEach(function(a){
-    var c = mk('div','card reveal');
-    css(c,{padding:'15px 17px',display:'flex',gap:'12px',alignItems:'flex-start'});
-    c.innerHTML =
-      '<span style="font-size:22px;flex-shrink:0;margin-top:2px">'+a.icon+'</span>'+
-      '<div>'+
-        '<div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:3px;align-items:center;flex-wrap:wrap">'+
-          '<span style="font-weight:700;color:#f0eef6;font-size:13.5px">'+a.name+'</span>'+
-          '<span style="color:#f9cb28;font-family:\'DM Mono\',monospace;font-size:11.5px;font-weight:600;white-space:nowrap">'+a.price+'</span>'+
-        '</div>'+
-        '<p style="color:#7a7a99;font-size:12.5px;line-height:1.6">'+a.desc+'</p>'+
-      '</div>';
-    hover(c,{borderColor:'rgba(249,203,40,.35)',transform:'translateY(-3px)'},
-             {borderColor:'rgba(255,255,255,.07)',transform:'translateY(0)'});
-    ag.appendChild(c);
-  });
-})();
-
-(function(){
-  var g = document.getElementById('work-grid');
-  PROJECTS.forEach(function(p){
-    var c = mk('div','work-card reveal');
-    var tagHtml = p.tags.map(function(t){
-      return '<span class="tag" style="background:'+p.color+'18;border:1px solid '+p.color+'44;color:'+p.color+'">'+t+'</span>';
-    }).join('');
-    c.innerHTML =
-      '<div class="work-thumb" style="background:linear-gradient(135deg,'+p.color+'2e,'+p.color+'0e);border-bottom:1px solid '+p.color+'22">'+
-        '<div class="work-thumb-glow" style="background:radial-gradient(circle at 35% 50%,'+p.color+'26,transparent 68%)"></div>'+
-        p.emoji+
-      '</div>'+
-      '<div style="padding:20px 20px 24px">'+
-        '<h3 style="font-weight:700;color:#f0eef6;font-size:15.5px;margin-bottom:7px">'+p.name+'</h3>'+
-        '<p style="color:#7a7a99;font-size:13.5px;line-height:1.68;margin-bottom:14px">'+p.desc+'</p>'+
-        '<div style="display:flex;gap:7px;flex-wrap:wrap">'+tagHtml+'</div>'+
-      '</div>';
-    hover(c,{borderColor:p.color+'44',boxShadow:'0 18px 48px '+p.color+'20',transform:'translateY(-6px) scale(1.01)'},
-             {borderColor:'rgba(255,255,255,.07)',boxShadow:'none',transform:'translateY(0) scale(1)'});
-    g.appendChild(c);
-  });
-})();
-
-(function(){
-  var g = document.getElementById('caps-grid');
-  CAPS.forEach(function(c){
-    var d = mk('div','card reveal');
-    css(d,{padding:'24px 22px',position:'relative',overflow:'hidden',cursor:'default'});
-    d.innerHTML =
-      '<div class="top-bar" style="background:linear-gradient(90deg,'+c.color+',transparent)"></div>'+
-      '<div style="font-size:28px;margin-bottom:12px">'+c.icon+'</div>'+
-      '<h3 style="font-weight:700;color:#f0eef6;font-size:15.5px;margin-bottom:8px">'+c.title+'</h3>'+
-      '<p style="color:#7a7a99;font-size:13.5px;line-height:1.68">'+c.desc+'</p>';
-    hover(d,{borderColor:c.color+'44',transform:'translateY(-4px)',boxShadow:'0 10px 30px '+c.color+'18'},
-             {borderColor:'rgba(255,255,255,.07)',transform:'translateY(0)',boxShadow:'none'});
-    g.appendChild(d);
-  });
-})();
-
-(function(){
-  var g = document.getElementById('process-grid');
-  PROCESS.forEach(function(s){
-    var c = mk('div','card reveal');
-    css(c,{padding:'26px 22px',position:'relative',overflow:'hidden'});
-    c.innerHTML =
-      '<div class="top-bar" style="background:linear-gradient(90deg,'+s.color+',transparent)"></div>'+
-      '<div style="font-family:\'Pacifico\',cursive;font-size:34px;'+
-        'background:linear-gradient(135deg,'+s.color+','+s.color+'99);'+
-        '-webkit-background-clip:text;background-clip:text;'+
-        '-webkit-text-fill-color:transparent;color:transparent;'+
-        'display:inline-block;line-height:1.3;padding-bottom:4px;margin-bottom:12px">'+s.num+'</div>'+
-      '<h3 style="font-weight:700;color:#f0eef6;font-size:15.5px;margin-bottom:8px">'+s.title+'</h3>'+
-      '<p style="color:#7a7a99;font-size:13.5px;line-height:1.68">'+s.desc+'</p>';
-    hover(c,{borderColor:s.color+'44',transform:'translateY(-4px)',boxShadow:'0 10px 30px '+s.color+'18'},
-             {borderColor:'rgba(255,255,255,.07)',transform:'translateY(0)',boxShadow:'none'});
-    g.appendChild(c);
-  });
-})();
-
-(function(){
-  var g = document.getElementById('contact-grid');
-  CONTACTS.forEach(function(c){
-    var a = mk('a','contact-card');
-    a.href = c.href;
-    if(c.href.indexOf('http')===0) a.target='_blank';
-    a.rel = 'noreferrer';
-    a.style.border = '1px solid '+c.border;
-    a.style.textDecoration = 'none';
-    a.innerHTML =
-      '<span style="font-size:28px">'+c.icon+'</span>'+
-      '<span style="color:'+c.color+';font-weight:700;font-size:13.5px">'+c.label+'</span>'+
-      '<span style="color:#7a7a99;font-family:\'DM Mono\',monospace;font-size:10.5px;word-break:break-all;text-align:center">'+c.sub+'</span>';
-    hover(a,{transform:'translateY(-5px)',boxShadow:'0 12px 30px '+c.shadow},
-             {transform:'translateY(0)',boxShadow:'none'});
-    g.appendChild(a);
-  });
-
-  var ch = document.getElementById('chips');
-  CHIPS.forEach(function(c){ ch.appendChild(mk('div','chip',c)); });
-})();
-
-window.addEventListener('scroll',function(){
-  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40);
-  document.getElementById('btt').classList.toggle('show',window.scrollY>300);
-},{passive:true});
-
-var menuOpen = false;
-window.toggleMenu = function(){
-  menuOpen = !menuOpen;
-  document.getElementById('mmenu').classList.toggle('open', menuOpen);
-  document.getElementById('hbg').classList.toggle('open', menuOpen);
-};
-window.closeMenu = function(){
-  menuOpen = false;
-  document.getElementById('mmenu').classList.remove('open');
-  document.getElementById('hbg').classList.remove('open');
-};
-window.addEventListener('scroll',function(){ if(menuOpen) window.closeMenu(); },{passive:true});
-
-(function(){
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(!entry.isIntersecting) return;
-      var nodes = entry.target.classList.contains('reveal')
-        ? [entry.target]
-        : Array.from(entry.target.querySelectorAll('.reveal'));
-      nodes.forEach(function(n,i){ setTimeout(function(){ n.classList.add('visible'); }, i*80); });
-      obs.unobserve(entry.target);
-    });
-  },{threshold:0.07});
-  document.querySelectorAll('.sec-head,.reveal').forEach(function(el){ obs.observe(el); });
-})();
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
